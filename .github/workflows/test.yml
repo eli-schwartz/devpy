@@ -49,6 +49,7 @@ jobs:
         run: |
           where.exe gcc
           where.exe clang
+          echo $env:Path
           ls C:\ProgramData\Chocolatey\bin\
           rm -r -force C:\Strawberry
       - name: Functional tests (other)
